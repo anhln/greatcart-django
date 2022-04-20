@@ -1,18 +1,18 @@
 # Ecommerce website greatcart-django
 
 
-# Requirements
+## Requirements
 
-# Demo
+## Demo
 
-# Technologies
+## Technologies
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Postgresql](https://www.postgresql.org/)
 
-# Development
+## Development
 
-# Getting Started
+## Getting Started
 
-# About Ecommerce Site
+## About Ecommerce Site
