@@ -172,8 +172,11 @@ def cart(request, total=0, quantity=0, cart_items=None):
         grand_total = 0
         if request.user.is_authenticated:
             cart_items = CartItem.objects.filter(user=request.user, is_active=True)
+            # total, quantity = CartItem.objects.get_total_price_quantity(current_user=request.user)
+            print(total, quantity)
         else:
             cart = Cart.objects.get(cart_id=_cart_id(request))
+            # total, quantity = CartItem.objects.get_total_price_quantity(cart=cart)
             cart_items = CartItem.objects.filter(cart=cart, is_active=True)
         for cart_item in cart_items:
             total += (cart_item.product.price * cart_item.quantity)
