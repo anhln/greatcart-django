@@ -10,6 +10,7 @@
             <header class="mb-4"><h4 class="card-title">Sign up</h4></header>
             <form action="{% url 'register' %}" method="POST">
                 {% csrf_token %}
+                {{form.captcha}}
                     <div class="form-row">
                         <div class="col form-group">
                             <label>First name</label>

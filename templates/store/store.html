@@ -135,7 +135,7 @@
             <figure class="card card-product-grid">
                 <div class="img-wrap"> 
                     
-                    <img src="{{product.images.url}}">
+                    <a href="{{ product.get_url }}"><img src="{{ product.images.url }}"></a>
                     
                 </div> <!-- img-wrap.// -->
                 <figcaption class="info-wrap">
